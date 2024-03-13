@@ -1,0 +1,18 @@
+
+<h4>{{ title }}</h4>
+<ul class="list-group">
+  <div class="">
+    <li *ngFor="let item of elements; index as index"
+      class="
+        list-group-item
+        list-group-item-info
+        d-flex
+        justify-content-between
+        align-items-center
+      ">
+      <span>{{ item.name }} - Power: {{ item.power }} {{ item.id }}</span>
+      <button (click)="onDeleteCharacter(item.id)" class="btn btn-danger">X</button>
+    </li>
+  </div>
+
+</ul>
